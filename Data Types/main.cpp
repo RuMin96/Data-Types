@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 //#define LOGICAL_TYPES
@@ -13,7 +13,7 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ïðèâåò DataTypes\n";
+	cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ DataTypes\n";
 #if defined LOGICAL_TYPES
 	cout << true << endl;
 	cout << false << endl;
@@ -40,14 +40,14 @@ void main()
 #ifdef COFFEE
 	double price_of_coffee;
 		int number_of_cups;
-		cout << "Ââåäèòå ñòîéìîñòü êîôå : "; cin >> price_of_coffee;
-		cout << "Ââåäèòå êîëè÷åñòâî ÷àøåê:"; cin >> number_of_cups;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ¾Ñ„Ðµ : "; cin >> price_of_coffee;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑˆÐµÐº:"; cin >> number_of_cups;
 		double total_price = price_of_coffee * number_of_cups;
-		cout << "Îáùàÿ ñòîéìîñòü: " << total_price << endl;
+		cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ: " << total_price << endl;
 #endif COFFEE
 		int speed = 0;
 		const int MAX_SPEED = 250;
-		cout << 5 << endl; // 5 ÷èñëîâàÿ êîíñòàíòà òèïà int
+		cout << 5 << endl; // 5 Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° int
 		// 5. -double
 		// .5 -double
 		// .5f-float
@@ -59,53 +59,53 @@ void main()
 
 #if define TASK_1
 		int number_to_enter;
-		cout << "Ââåäèòå äðîáíîå ÷èñëî :"; cin >> number_to_enter;
-		cout << number_to_enter - number_to_enter << "ãðí." << number_to_enter %100 << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ñ€Ð¾Ð±Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ :"; cin >> number_to_enter;
+		cout << number_to_enter - number_to_enter << "Ð³Ñ€Ð½." << number_to_enter %100 << endl;
 #endif TASK_1
 
 
 
 
 #if defined TASK_2
-		cout << "Âû÷èñëåíèå ñòîèìîñòè ïîêóïêè:"
+		cout << "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸:"
 		double price_of_notebook;
 		int number_of_notebook;
 		double price_of_pen;
 		int number_of_pen;
-		cout << "Ââåäèòå ñòîéìîñòü òåòðàäè : "; cin >> price_of_notebook;
-		cout << "Ââåäèòå êîëè÷åñòâî òåòðàäåé:"; cin >> number_of_notebook;
-		cout << "Ââåäèòå ñòîéìîñòü êàðàíäàøà : "; cin >> price_of_pen;
-		cout << "Ââåäèòå êîëè÷åñòâî êàðàíäàøåé:"; cin >> number_of_pen;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ñ‚ÐµÑ‚Ñ€Ð°Ð´Ð¸ : "; cin >> price_of_notebook;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚ÐµÑ‚Ñ€Ð°Ð´ÐµÐ¹:"; cin >> number_of_notebook;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ°Ñ€Ð°Ð½Ð´Ð°ÑˆÐ° : "; cin >> price_of_pen;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ°Ñ€Ð°Ð½Ð´Ð°ÑˆÐµÐ¹:"; cin >> number_of_pen;
 		double purchase_price = (price_of_notebook * number_of_notebook) + (price_of_pen * number_of_pen);
-		cout << "Ñòîéìîñòü ïîêóïêè: " << purchase_price << "ãðí." << endl;
+		cout << "Ð¡Ñ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸: " << purchase_price << "Ð³Ñ€Ð½." << endl;
 #endif TASK_2
 
 
 
 #if defined TASK_3
-		cout << "Âû÷èñëåíèå ñòîèìîñòè ïîêóïêè:";
+		cout << "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸:";
 		double price_of_notebook;
 		double price_of_cover;
 		int number_of_sets;
-		cout << "Ââåäèòå ñòîéìîñòü òåòðàäè : "; cin >> price_of_notebook;
-		cout << "Ââåäèòå ñòîéìîñòü îáëîæêè : "; cin >> price_of_cover;
-		cout << "Ââåäèòå êîëè÷åñòâî êîìïëåêòîâ:"; cin >> number_of_sets;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ñ‚ÐµÑ‚Ñ€Ð°Ð´Ð¸ : "; cin >> price_of_notebook;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ð¾Ð±Ð»Ð¾Ð¶ÐºÐ¸ : "; cin >> price_of_cover;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑ‚Ð¾Ð²:"; cin >> number_of_sets;
 		double purchase_price = (price_of_notebook + price_of_cover)* number_of_sets;
-		cout << "Ñòîéìîñòü ïîêóïêè: " << purchase_price << "ãðí." << endl;
+		cout << "Ð¡Ñ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸: " << purchase_price << "Ð³Ñ€Ð½." << endl;
 #endif TASK_3
 
 
 
 #if defined TASK_4
-		cout << "Âû÷èñëåíèå ñòîèìîñòè ïîåçäêè íà äà÷ó è îáðàòíî: " << endl;
+		cout << "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¿Ð¾ÐµÐ·Ð´ÐºÐ¸ Ð½Ð° Ð´Ð°Ñ‡Ñƒ Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾: " << endl;
 		int distance_to_the_cottage;
 		double gasoline_consumption;
 		double price_of_liter_of_gasoline;
-		cout << "Ââåäèòå ðàññòîÿíèå äî äà÷è (êì.): "; cin >> distance_to_the_cottage;
-		cout << "Ââåäèòå ðàñõîä áåíçèíà( Ëèòðîâ íà 100 êì.): "; cin >> gasoline_consumption;
-		cout << "Öåíà ëèòðà áåíçèíà(ãðí.):"; cin >> price_of_liter_of_gasoline;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð´Ð¾ Ð´Ð°Ñ‡Ð¸ (ÐºÐ¼.): "; cin >> distance_to_the_cottage;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°ÑÑ…Ð¾Ð´ Ð±ÐµÐ½Ð·Ð¸Ð½Ð°( Ð›Ð¸Ñ‚Ñ€Ð¾Ð² Ð½Ð° 100 ÐºÐ¼.): "; cin >> gasoline_consumption;
+		cout << "Ð¦ÐµÐ½Ð° Ð»Ð¸Ñ‚Ñ€Ð° Ð±ÐµÐ½Ð·Ð¸Ð½Ð°(Ð³Ñ€Ð½.):"; cin >> price_of_liter_of_gasoline;
 		double durability_of_the_trip = ((gasoline_consumption / 100) * (distance_to_the_cottage*2) * price_of_liter_of_gasoline);
-		cout << "Ñòîéìîñòü ïîåçäêè òóäà è îáðàòíî îáîéäåòñÿ â " << durability_of_the_trip << "ãðí." << endl;
+		cout << "Ð¡Ñ‚Ð¾Ð¹Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÐµÐ·Ð´ÐºÐ¸ Ñ‚ÑƒÐ´Ð° Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾ Ð¾Ð±Ð¾Ð¹Ð´ÐµÑ‚ÑÑ Ð² " << durability_of_the_trip << "Ð³Ñ€Ð½." << endl;
  
 #endif TASK_4
 }
